@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PaymentPage extends BasePage {
-    public PaymentPage(WebDriver driver) {
+public class PaymentMethodsPage extends BasePage {
+    public PaymentMethodsPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver,this);
         waitForWebElement(paymentSection);
@@ -21,9 +21,9 @@ public class PaymentPage extends BasePage {
     @FindBy(className = "cheque")
     private WebElement payByCheck ;
 
-    public OrderConfirmationPage payByCheck(){
+    public OrderSummaryPage payByCheck(){
         payByCheck.click();
-        return new OrderConfirmationPage(driver);
+        return new OrderSummaryPage(driver);
     }
 
 }

@@ -22,9 +22,9 @@ public class ShippingAddressPage extends BasePage {
     @FindBy(name = "processCarrier")
     private WebElement checkoutStep4 ;
 
-    public PaymentPage navToPayment(){
+    public PaymentMethodsPage navToPayment(){
         tncCheckbox.click();
         checkoutStep4.click();
-        return new PaymentPage(driver);
+        return new PaymentMethodsPage(driver);
     }
 }
