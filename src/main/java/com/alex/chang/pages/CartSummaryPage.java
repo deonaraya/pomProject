@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CartSummaryPage extends BasePage {
+public class CartSummaryPage extends NavPage {
 
     //STEPS :
 //    1. Creaste /Store  WebEleemtns

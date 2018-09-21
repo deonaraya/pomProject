@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class RegistrationPage extends BasePage {
+public class RegistrationPage extends NavPage {
 
     public RegistrationPage(WebDriver driver) {
         super(driver);

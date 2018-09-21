@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class AddToCartPopUp extends BasePage {
+public class AddToCartPopUp extends NavPage {
 
     public AddToCartPopUp(WebDriver driver) {
         super(driver);

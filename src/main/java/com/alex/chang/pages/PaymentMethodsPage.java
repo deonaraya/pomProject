@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class PaymentMethodsPage extends BasePage {
+public class PaymentMethodsPage extends NavPage {
     public PaymentMethodsPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver,this);

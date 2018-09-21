@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BillingAddressPage extends BasePage {
+public class BillingAddressPage extends NavPage {
 
     public BillingAddressPage(WebDriver driver) {
         super(driver);

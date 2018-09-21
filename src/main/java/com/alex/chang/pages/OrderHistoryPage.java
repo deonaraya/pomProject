@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import javax.xml.xpath.XPath;
 import java.util.List;
 
-public class OrderHistoryPage extends BasePage {
+public class OrderHistoryPage extends NavPage {
     public OrderHistoryPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver,this);

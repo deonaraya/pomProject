@@ -33,7 +33,7 @@ public class pomTestOne extends BaseTest {
 //        homePage.getProductPrices().addToCart().verifySuccessMessage().proceedToCheckOut().navToAuth().signUp("logan_randopnQE@grr.la").register();
         homePage.getProductPrices().addToCart().verifySuccessMessage().proceedToCheckOut()
                 .navToAuth().signIn("nadcido@mailinator.com","pass123").
-                navToShipping().navToPayment().payByCheck().confirmOrder().getOrderNumber().navToOrderHistory() ;
+                navToShipping().navToPayment().payByCheck().confirmOrder().getOrderNumber().navToOrderHistory().signOut() ;
 
     }
 }

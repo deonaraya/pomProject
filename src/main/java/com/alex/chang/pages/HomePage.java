@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-public class HomePage extends BasePage {
+public class HomePage extends NavPage {
 
     //STEPS :
 //    1. Creaste /Store  WebEleemtns

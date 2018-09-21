@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AuthenticationPage extends BasePage {
+public class AuthenticationPage extends NavPage {
 
     //    1. Creaste /Store  WebEleemtns
 //    2. Writer menthodds on these webElements
