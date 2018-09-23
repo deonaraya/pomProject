@@ -34,6 +34,10 @@ public class OrderConfirmationPage extends NavPage {
         return this;
     }
 
+    public String getOrderText(){
+        return orderNumText.getText();
+    }
+
     public OrderHistoryPage navToOrderHistory(){
         orderHistoryButton.click();
         return new OrderHistoryPage(driver);

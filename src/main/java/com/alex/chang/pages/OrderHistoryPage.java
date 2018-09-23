@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import javax.xml.xpath.XPath;
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderHistoryPage extends NavPage {
@@ -44,5 +45,13 @@ public class OrderHistoryPage extends NavPage {
                 res = true;
         }
         return res;
+    }
+
+    public List<String> getOrderNumbers(){
+        List<String> orderList = new ArrayList<String>();
+        for (WebElement elem : orderNumbers) {
+            orderList.add(elem.getText());
+        }
+        return orderList;
     }
 }

@@ -10,7 +10,11 @@ public class NavPage extends BasePage {
     public NavPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver,this);
+        waitForWebElement(footerSection);
     }
+
+    @FindBy(id = "footer")
+    private WebElement footerSection;
 
     @FindBy(xpath = "//footer[@id='footer']//a[@title='My orders']")
     private WebElement myOrdersLink;
